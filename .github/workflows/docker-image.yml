@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: '0 0 * * *'  # Runs at midnight every day (UTC time)
 
 jobs:
   build-and-push:
