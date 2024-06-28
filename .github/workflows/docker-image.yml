@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *'  # Runs at midnight every day (UTC time)
+    - cron: '0 0 * * 0'  # Runs at midnight every Sunday (UTC time)
 
 jobs:
   build-and-push:
